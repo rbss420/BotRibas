@@ -254,7 +254,7 @@ module.exports = HandleMsg = async (aruga, message) => {
                 await aruga.joinGroupViaLink(linkgrup)
                       .then(async () => {
                           await aruga.sendText(from, 'Berhasil join grup via link!')
-                          await aruga.sendText(chekgrup.id, `Hai minna~, Im Aruga Bot. To find out the commands on this Bot type ${prefix}menu`)
+                          await aruga.sendText(chekgrup.id, `Hai minna~, Im RibasYT. To find out the commands on this Bot type ${prefix}menu`)
                       })
             } else {
                 let cgrup = await aruga.getAllGroups()
@@ -310,7 +310,7 @@ module.exports = HandleMsg = async (aruga, message) => {
             break
 	case 'coolteks':
 	case 'cooltext':
-            if (args.length == 0) return aruga.reply(from, `Untuk membuat teks keren CoolText pada gambar, gunakan ${prefix}cooltext teks\n\nContoh: ${prefix}cooltext arugaz`, id)
+            if (args.length == 0) return aruga.reply(from, `Untuk membuat teks keren CoolText pada gambar, gunakan ${prefix}cooltext teks\n\nContoh: ${prefix}cooltext ribas`, id)
 		rugaapi.cooltext(args[0])
 		.then(async(res) => {
 		await aruga.sendFileFromUrl(from, `${res.link}`, '', `${res.text}`, id)
@@ -560,7 +560,7 @@ module.exports = HandleMsg = async (aruga, message) => {
                         hehex += '╠➥ '
                         hehex += response.data.data[i].name.transliteration.id.toLowerCase() + '\n'
                             }
-                        hehex += '╚═〘 *A R U G A  B O T* 〙'
+                        hehex += '╚═〘 *R I B A S  B O T* 〙'
                     aruga.reply(from, hehex, id)
                 })
             } catch(err) {
@@ -1273,7 +1273,7 @@ module.exports = HandleMsg = async (aruga, message) => {
                 hehex += '╠➥'
                 hehex += ` @${groupMem[i].id.replace(/@c.us/g, '')}\n`
             }
-            hehex += '╚═〘 *A R U G A  B O T* 〙'
+            hehex += '╚═〘 *R I B A S B O T* 〙'
             await aruga.sendTextWithMentions(from, hehex)
             break
 		case 'simisimi':
@@ -1423,8 +1423,8 @@ module.exports = HandleMsg = async (aruga, message) => {
             const chatz = await aruga.getAllChatIds()
             for (let idk of chatz) {
                 var cvk = await aruga.getChatById(idk)
-                if (!cvk.isReadOnly) aruga.sendText(idk, `〘 *A R U G A  B C* 〙\n\n${msg}`)
-                if (cvk.isReadOnly) aruga.sendText(idk, `〘 *A R U G A  B C* 〙\n\n${msg}`)
+                if (!cvk.isReadOnly) aruga.sendText(idk, `〘 *R I B A S  B C* 〙\n\n${msg}`)
+                if (cvk.isReadOnly) aruga.sendText(idk, `〘 *R I B A S B C* 〙\n\n${msg}`)
             }
             aruga.reply(from, 'Broadcast Success!', id)
             break

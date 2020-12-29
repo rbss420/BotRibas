@@ -6,15 +6,15 @@
   "scripts": {
     "start": "node index.js"
   },
-  "author": "ArugaZ",
+  "author": "RibasYT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ArugaZ/whatsapp-bot.git"
+    "url": "https://github.com/rbss420/BotRibas.git"
   },
   "bugs": {
-    "url": "https://github.com/ArugaZ/whatsapp-bot/issues"
+    "url": "https://github.com/rbss420/BotRibas/issues"
   },
-  "homepage": "https://github.com/ArugaZ/whatsapp-bot",
+  "homepage": "https://github.com/rbss420/BotRibas",
   "license": "ISC",
   "dependencies": {
     "@open-wa/wa-automate": "^3.1.0",
